@@ -1,0 +1,134 @@
+﻿<div class="container">
+<div id="Home" class="jumbotron effect4 bg-success jumbo-bg-Image wow fadeInDown animated">           
+    </div>
+    <script>
+            $(document).ready(function () {
+                $("#Home").css('margin-top', 70);
+                $("#Tag1").css('font-size', "500%");
+                $("#H1").css('font-family', "Monotype Corsiva")
+                $("#H1").css('color', "darkorange");
+                $("H1").css('font', 'bold');
+                //$("#Tag1").css('margin-left', 100);
+                $("#H1").css('margin-left', 160);
+                $("#H1").css('margin-top', 300);
+                //$("#H1").css('font-family', "Times New Roman")
+            });
+    </script>
+<div class="jumbotron callout effect4 wow fadeInUp animated">
+    <div class="row">
+        <div class="container-fluid ">
+            <div id="Shopping" class="col-md-4">
+                <h2 id="ShoppingCart_Icon" spellcheck="true" class="accordion-title text-center h2" style="font-family:'Times New Roman';font:bolder;"><span id="ShoppingCart"><span class="shopping-cart fa fa-shopping-cart"></span></span> </h2>
+                <br />
+                <p id="ShoppingCart_Icon_Pragraph" class="accordion accordion-content text-justify  " style="font-family:'Times New Roman'; font:bold;" spellcheck="true">
+                    Cordial Clientèle provides you a variety of items on large scale  in different sectors. <br />
+                    It helps you to purchase any item from on-line in a best and easy way..
+                </p>
+            </div>
+            <div id="Banking" class="col-md-4">
+                <h2 id="Virtual_Bank_icon" spellcheck="true" class="accordion accordion-title text-center h2" style="font-family:'Times New Roman';font:bolder;"><span class="piggy-bank fa fa-university"></span></h2>
+                <br />
+                <p id="Virtual_Banking_Pragraph" class="accordion accordion-content text-justify" spellcheck="true" style="font-family:'Times New Roman';font:bold;">
+                    Cordial Clientele provides you a most powerful tool for your shopping
+                    which will help you to send and receive money among your friends with out any account number just by drag and drop movement you can and send
+                    receive money..
+                </p>
+            </div>
+            <div id="Friends" class="col-md-4">
+                <h2 id="Group_Icon" class="accordion accordion-title text-center h2" spellcheck="true" style="font-family:'Times New Roman';font:bold;"><span class="user fa fa-user-secret"></span></h2>
+                <p id="Group_Icon_Pragraph" spellcheck="true" class="text-justify accordion accordion-content " style="font-family:'Times New Roman';font:bold">
+                    At Cordial Clientele you can socialize your shopping experience with your friends and family by inviting them to join you on
+                    your shopping tour around the Cordial Clientele you can share the item information with them by just doing a drag and drop movement..
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+<style>
+    #welcome_Body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: sandybrown;
+    }
+
+    #video1 {
+        width: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .jumbo-bg-Image {
+        background-image: url('../images/shopping.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        height: 300px;
+        color: inherit;
+    }
+
+    .fa-shopping-cart:hover {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+        transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        font-size: 80px;
+    }
+
+    .fa-university:hover {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+        transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        font-size: 80px;
+    }
+
+    .fa-user-secret:hover {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+        transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        font-size: 80px;
+    }
+    #Home{
+        margin-top:70px;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#ShoppingCart_Icon_Pragraph").hide();
+        $("#Virtual_Banking_Pragraph").hide();
+        $("#Group_Icon_Pragraph").hide();
+        $(".shopping-cart").hover(function () {
+            $("#ShoppingCart_Icon_Pragraph").toggle(3000);
+        });
+
+        $(".piggy-bank").hover(function () {
+            $("#Virtual_Banking_Pragraph").toggle(3000)
+        });
+        $(".user").hover(function () {
+            $("#Group_Icon_Pragraph").toggle(3000)
+        });
+
+    })
+</script>
+
+
+

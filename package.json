@@ -1,0 +1,28 @@
+{
+  "name": "CordialClientele_Auth0",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-jwt": "^0.1.3",
+    "angular-material": "^1.1.1",
+    "angular-messages": "^1.5.8",
+    "angular-storage": "0.0.15",
+    "angular-ui-router": "^0.3.1",
+    "auth0-angular": "^4.2.3",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "hjs": "~0.0.6",
+    "hogan-express": "^0.5.2",
+    "kendo-ui-core": "^2016.2.727",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
+}

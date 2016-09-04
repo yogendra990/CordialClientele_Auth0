@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CordialClientele">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="../public/images/CordialClientele.png" />
+    <title></title>
+    <!---------Auth0 Lock Script and AngularJs Module--------------->
+    <script type="text/javascript" src="https://cdn.auth0.com/js/lock-9.0.min.js"></script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><img id="Cordial_Clientele" src="../public/images/CordialClientele.png" /></span>
+        </div>
+        <div class="navbar-collapse collapse" ng-controller="ProfileController as profile">
+            <ul class="nav navbar-nav nav-pills">
+                <li>
+                    <a ui-sref="Home" ui-sref-active="activeState" style="font-size:large;font-family:'Times New Roman';font-style:normal;color:#058273"
+                    ng-if="!profile.auth.isAuthenticated">
+                        <i class="fa-2x fa fa-home" style="font-size:x-large"></i>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="AboutUs" ui-sref-active="activeState" style="font-size:large;font-family:'Times New Roman';font-style:normal;color:#058273"
+                    ng-if="!profile.auth.isAuthenticated">
+                        <i class="fa-2x fa fa-info" style="font-size:x-large"></i>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="ContactUs" ui-sref-active="activeState" style="font-size:large;font-family:'Times New Roman';font-style:normal;color:#058273"
+                    ng-if="!profile.auth.isAuthenticated">
+                        <i class="fa-2x fa fa-envelope-square" style="font-size:x-large"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav nav-pills navbar-right">
+                 <li>
+                    <a href="#"> <i class="fa-2x fa fa-user" style="font-size:x-large"
+                     aria-label="Login"
+                        ng-click="profile.login()"
+                        ng-if="!profile.auth.isAuthenticated"></i></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-2x fa-power-off"
+                        aria-label="Logout"
+                        ng-click="profile.logout()"
+                        ng-if="profile.auth.isAuthenticated">
+                        </i> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <ui-view></ui-view>
+</div>
+<footer>
+    <div class="row pull-right">
+        <div>
+            <p class="pull-right  "><span id="glyphicon" class="fa fa-copyright"></span><img src="../public/images/a9_Logo5.png" alt="A9Software" style="width:300px; height:200px; background:transparent;" /> </p>
+        </div>
+    </div>
+</footer>
+<style scoped>
+    #Cordial_Clientele {
+        width: 220px;
+        height: 60px;
+        background-color: transparent;
+        margin: 2px;
+    }
+
+    .containe,.container-fluid{
+        padding: 2px;
+    }
+
+    .fa-copyright {
+        font-size: x-large;
+    }
+
+    a {
+        cursor: pointer;
+    }
+</style>
+<!----Loading Scripts and StyleSheets------->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="../node_modules/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="../node_modules/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
+<script type="text/javascript" src="../node_modules/angular-jwt/dist/angular-jwt.js"></script>
+<script type="text/javascript" src="../node_modules/angular-storage/dist/angular-storage.js"></script>
+<script type="text/javascript" src="../node_modules/auth0-angular/build/auth0-angular.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../node_modules/kendo-ui-core/js/kendo.ui.core.js"></script>
+<script type="text/javascript" src="../public/CordialComponents/CordialClienteleAuth0.js"></script>
+<script type="text/javascript" src="../public/CordialComponents/Services/CordialFactoryService.js"></script>
+<script type="text/javascript" src="../public/CordialComponents/Controller/CordialController.js"></script>
+<script type="text/javascript" src="../public/CordialComponents/Direcitives/CordialDirective.js"></script>
+<link rel="stylesheet" href="../node_modules/angular-material/angular-material.css"/>
+<link rel="stylesheet" href="../public/stylesheets/Darkly_bootstrap.css"/>
+<link rel="stylesheet" href="../public/stylesheets/animate.css"/>
+<link rel="stylesheet" href="../public/stylesheets/font-awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="../node_modules/kendo-ui-core/css/web/kendo.common.core.css"/>
+<link rel="stylesheet" href="../public/CordialComponents/Direcitives/ProfileStyleSheet.css"/>
+<link rel="stylesheet" href="../public/stylesheets/style.css"/>
+<script>
+    $(document).ready(function () {
+        $("#glyphicon").css('font-size', '30px');
+    })
+</script>
+</body>
+</html>
