@@ -28,7 +28,7 @@
                     .state('Profile', {
                         url: '/profile',
                         templateUrl: '../public/Templates/AfterLogin/AfterLogin.html',
-                        controller: 'CordialAuth0Profile as User'
+                        controller: 'AfterLogin'
                     })
                 $urlRouterProvider.otherwise('/home')
             }])

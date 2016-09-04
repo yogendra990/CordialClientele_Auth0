@@ -47,6 +47,11 @@
                         ng-if="!profile.auth.isAuthenticated"></i></a>
                 </li>
                 <li>
+                    <i ng-if="profile.auth.isAuthenticated">
+                        <img ng-src="{{profile.profilePicture}}" height="70" width="60" class="img-responsive img-rounded">
+                    </i>
+                </li>
+                <li>
                     <a href="#">
                         <i class="fa fa-2x fa-power-off"
                         aria-label="Logout"
